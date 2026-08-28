@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Van Field Group — Workday consulting, Chicago</title>
-<meta name="description" content="Van Field Group is a boutique Workday consultancy in Chicago. Functional and technical delivery across HCM, Payroll, Benefits, Compensation, Security, Reporting, and Integrations. Founded 2014.">
+<title>Van Field Group — ERP consulting, Chicago</title>
+<meta name="description" content="Van Field Group is an independent ERP consultancy in Chicago. Deep Workday delivery across HCM, Payroll, Benefits, Compensation, Security, Reporting, and Integrations, plus the architecture work that sits outside the platform. Founded 2014.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -35,23 +35,23 @@ a{color:inherit}
 header{border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--paper);z-index:20}
 .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
 .logo{font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:2px solid var(--ink);padding:7px 12px 6px;line-height:1}
-nav ul{display:flex;gap:2rem;list-style:none}
+nav ul{display:flex;gap:1.75rem;list-style:none}
 nav a{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink-2);padding-bottom:2px;border-bottom:1px solid transparent}
 nav a:hover{color:var(--ink);border-color:var(--signal)}
-@media(max-width:760px){nav{display:none}}
+@media(max-width:860px){nav{display:none}}
 
 .hero{padding:clamp(4.5rem,11vw,9rem) 0 clamp(3.5rem,7vw,6rem)}
 .hero h1{font-family:var(--display);font-weight:600;font-size:clamp(2.4rem,6.6vw,5.2rem);line-height:1.02;letter-spacing:-.035em;max-width:16ch;margin:1.6rem 0 0}
-.lede{font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.55;color:var(--ink-2);max-width:54ch;margin-top:1.7rem}
+.lede{font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.55;color:var(--ink-2);max-width:56ch;margin-top:1.7rem}
 .strip{display:flex;flex-wrap:wrap;gap:0;margin-top:clamp(3rem,6vw,5rem);border-top:1px solid var(--rule)}
 .strip div{flex:1 1 190px;padding:1.15rem 1.5rem 1.15rem 0}
 .strip .k{display:block;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.4rem}
 .strip .v{font-size:15.5px;color:var(--ink)}
 
 .band{background:var(--ink);color:var(--paper);padding:clamp(4rem,8vw,7rem) 0}
-.band p.stmt{font-family:var(--display);font-weight:500;font-size:clamp(1.55rem,3.4vw,2.9rem);line-height:1.2;letter-spacing:-.02em;max-width:22ch}
+.band p.stmt{font-family:var(--display);font-weight:500;font-size:clamp(1.55rem,3.4vw,2.9rem);line-height:1.2;letter-spacing:-.02em;max-width:20ch}
 .band .eyebrow{color:#7E837F;margin-bottom:1.6rem}
-.band .note{font-family:var(--body);font-size:1.02rem;line-height:1.6;color:#A9ADA9;max-width:46ch;margin-top:2rem}
+.band .note{font-family:var(--body);font-size:1.02rem;line-height:1.6;color:#A9ADA9;max-width:50ch;margin-top:2rem}
 
 .section{padding:clamp(4rem,8vw,7rem) 0}
 .section-head{display:flex;justify-content:space-between;align-items:baseline;gap:2rem;flex-wrap:wrap;border-bottom:1px solid var(--ink);padding-bottom:1.1rem;margin-bottom:3rem}
@@ -67,9 +67,10 @@ nav a:hover{color:var(--ink);border-color:var(--signal)}
 .cap h3{font-family:var(--display);font-weight:600;font-size:1.15rem;letter-spacing:-.01em;margin:.9rem 0 .7rem}
 .cap p{font-size:15.5px;line-height:1.6;color:var(--ink-2)}
 
-.firm{background:var(--field)}
-.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(2rem,5vw,4.5rem)}
-@media(max-width:820px){.facts{grid-template-columns:1fr}}
+.beyond{background:var(--field)}
+
+.firm .facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(2rem,5vw,4.5rem)}
+@media(max-width:820px){.firm .facts{grid-template-columns:1fr}}
 .facts p{color:var(--ink-2);margin-bottom:1.25rem;max-width:52ch}
 .facts p:last-child{margin-bottom:0}
 .record{list-style:none;border-top:1px solid var(--rule)}
@@ -104,9 +105,10 @@ footer{border-top:1px solid var(--rule);margin-top:clamp(3.5rem,7vw,6rem);paddin
     <a class="logo" href="/">Van Field Group</a>
     <nav>
       <ul>
-        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#workday">Workday</a></li>
+        <li><a href="#beyond">Beyond the platform</a></li>
         <li><a href="#firm">The firm</a></li>
-        <li><a href="#sectors">Sectors</a></li>
+        <li><a href="#sectors">Where we work</a></li>
       </ul>
     </nav>
   </div>
@@ -116,23 +118,23 @@ footer{border-top:1px solid var(--rule);margin-top:clamp(3.5rem,7vw,6rem);paddin
 
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow">Workday consulting &nbsp;/&nbsp; Chicago &nbsp;/&nbsp; Since 2014</p>
+      <p class="eyebrow">ERP consulting &nbsp;/&nbsp; Chicago &nbsp;/&nbsp; Since 2014</p>
       <h1>One team from requirements to production.</h1>
-      <p class="lede">Van Field Group is a boutique Workday consultancy. Functional design and technical build come off the same bench, not from two vendors who have never spoken to each other.</p>
+      <p class="lede">Van Field Group is an ERP consultancy. Most of our work is Workday, functional and technical, delivered by the same bench. The rest is everything that happens at the edges, where the platform ends and the business does not.</p>
 
       <div class="strip">
         <div><span class="k">Founded</span><span class="v">2014, Chicago</span></div>
-        <div><span class="k">Scope</span><span class="v">Full platform, functional and technical</span></div>
-        <div><span class="k">Engagements</span><span class="v">Long-term, often full implementation cycles</span></div>
+        <div><span class="k">Core platform</span><span class="v">Workday, functional and technical</span></div>
+        <div><span class="k">Also</span><span class="v">Data architecture, system selection, integration</span></div>
         <div><span class="k">Delivery</span><span class="v">Remote, nationwide</span></div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="capabilities">
+  <section class="section" id="workday">
     <div class="wrap">
       <div class="section-head">
-        <h2>What we deliver</h2>
+        <h2>Workday</h2>
         <span class="eyebrow">Functional and technical</span>
       </div>
       <div class="grid">
@@ -163,8 +165,8 @@ footer{border-top:1px solid var(--rule);margin-top:clamp(3.5rem,7vw,6rem);paddin
         </div>
         <div class="cap">
           <span class="eyebrow">Integration</span>
-          <h3>Data architecture</h3>
-          <p>Studio, Orchestrate, EIB, Core Connectors, RaaS, and event-driven REST patterns feeding Snowflake, Databricks, and Palantir Foundry.</p>
+          <h3>Platform connectivity</h3>
+          <p>Studio, Orchestrate, EIB, Core Connectors, RaaS, and event-driven patterns across the full REST and SOAP surface.</p>
         </div>
       </div>
     </div>
@@ -172,9 +174,35 @@ footer{border-top:1px solid var(--rule);margin-top:clamp(3.5rem,7vw,6rem);paddin
 
   <section class="band">
     <div class="wrap">
-      <p class="eyebrow">Independence</p>
-      <p class="stmt">We have no methodology to sell.</p>
-      <p class="note">The recommendation you get is the one we actually think is right, including when the answer is that you do not need us for it.</p>
+      <p class="eyebrow">How we think about it</p>
+      <p class="stmt">Not every problem has a Workday answer.</p>
+      <p class="note">Configuration is easy to add and expensive to remove. So the first question is whether the problem belongs in Workday, beside it, or nowhere, and we would rather spend time there than on a build that has to be unwound in two years.</p>
+    </div>
+  </section>
+
+  <section class="section beyond" id="beyond">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Beyond the platform</h2>
+        <span class="eyebrow">Where Workday stops</span>
+      </div>
+      <div class="grid">
+        <div class="cap">
+          <span class="eyebrow">Architecture</span>
+          <h3>Enterprise data</h3>
+          <p>Real-time and event-driven patterns feeding Snowflake, Databricks, and Palantir Foundry, and ERP data exposed to AI agents through Model Context Protocol servers.</p>
+        </div>
+        <div class="cap">
+          <span class="eyebrow">Strategy</span>
+          <h3>System selection</h3>
+          <p>Deciding what belongs in the ERP, what belongs beside it, and what should not be bought at all. We have no reseller relationship in any direction.</p>
+        </div>
+        <div class="cap">
+          <span class="eyebrow">Legacy</span>
+          <h3>Conversion and archive</h3>
+          <p>Data conversion, legacy ERP archive, and the migration work that surrounds a platform change. Our ERP experience predates Workday and covers the systems it usually replaces.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -194,7 +222,7 @@ footer{border-top:1px solid var(--rule);margin-top:clamp(3.5rem,7vw,6rem);paddin
             <li><span class="k">Founded</span><span class="v">2014</span></li>
             <li><span class="k">Structure</span><span class="v">Privately held, independently owned</span></li>
             <li><span class="k">Principal</span><span class="v">Lewis Reis, President and Principal ERP Architect</span></li>
-            <li><span class="k">Bench</span><span class="v">Workday specialists across functional and technical</span></li>
+            <li><span class="k">Bench</span><span class="v">Specialists across functional and technical</span></li>
             <li><span class="k">Based</span><span class="v">Chicago, Illinois</span></li>
             <li><span class="k">Delivery</span><span class="v">Remote, nationwide</span></li>
           </ul>
@@ -207,14 +235,14 @@ footer{border-top:1px solid var(--rule);margin-top:clamp(3.5rem,7vw,6rem);paddin
     <div class="wrap">
       <div class="section-head">
         <h2>Where we work</h2>
-        <span class="eyebrow">What the work looks like</span>
+        <span class="eyebrow">Our clients, not us</span>
       </div>
       <div class="sectors">
 
         <div class="sec">
           <span class="eyebrow">01</span>
-          <h3>Defense and government contracting</h3>
-          <p>Job architecture that maps to contracts and clearance structures, security models built to be explained to an auditor, and reporting that holds up under scrutiny from outside the organization.</p>
+          <h3>Defense and advanced technology</h3>
+          <p>Software and hardware companies building for government and national security customers. Engineering headcount that grows faster than the configuration behind it, project and contract cost structures, and security models written to be explained to an auditor.</p>
         </div>
 
         <div class="sec">
@@ -225,26 +253,26 @@ footer{border-top:1px solid var(--rule);margin-top:clamp(3.5rem,7vw,6rem);paddin
 
         <div class="sec">
           <span class="eyebrow">03</span>
-          <h3>Hospital and provider systems</h3>
-          <p>Workforces that never stop. Scheduling, absence, premium pay, and union rules across large clinical populations, with integrations to credentialing, scheduling, and clinical systems that predate Workday.</p>
+          <h3>Public media and mission-driven organizations</h3>
+          <p>Broadcasters, nonprofits, and institutions running lean back offices against complex realities. Grant and program-funded cost allocation, mixed populations of staff, freelance, and union talent, and reporting written for a board rather than a CFO.</p>
         </div>
 
         <div class="sec">
           <span class="eyebrow">04</span>
+          <h3>Communications and professional services</h3>
+          <p>Agencies and advisory firms where people are the product. Billable and project-based structures, utilization and client cost allocation, and small offices spread across many countries, each with its own payroll and statutory benefit rules.</p>
+        </div>
+
+        <div class="sec">
+          <span class="eyebrow">05</span>
           <h3>Health technology</h3>
           <p>Organizations whose headcount changes shape faster than their configuration does. Recruiting through to hire, supervisory structures that survive reorganization, and data flowing out to the analytics platform the business already runs on.</p>
         </div>
 
         <div class="sec">
-          <span class="eyebrow">05</span>
+          <span class="eyebrow">06</span>
           <h3>Retail and consumer health</h3>
           <p>High-volume hourly workforces at scale. Time tracking, absence, and benefits eligibility across thousands of variable-hour employees, plus the carrier connectivity that has to be right before open enrollment opens.</p>
-        </div>
-
-        <div class="sec">
-          <span class="eyebrow">06</span>
-          <h3>Enterprise data and analytics</h3>
-          <p>Work that starts in Workday and does not end there. Real-time and event-driven patterns feeding Snowflake, Databricks, and Palantir Foundry, and Workday data exposed to AI agents through Model Context Protocol servers.</p>
         </div>
 
       </div>
@@ -270,7 +298,7 @@ footer{border-top:1px solid var(--rule);margin-top:clamp(3.5rem,7vw,6rem);paddin
   <div class="wrap foot">
     <span>Van Field Group, Inc.</span>
     <span>Founded 2014 &nbsp;/&nbsp; Chicago</span>
-    <span>Workday consulting</span>
+    <span>ERP consulting</span>
   </div>
 </footer>
 

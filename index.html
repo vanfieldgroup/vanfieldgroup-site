@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Van Field Group — Workday consulting, Chicago</title>
+<meta name="description" content="Van Field Group is a boutique Workday consultancy in Chicago. Functional and technical delivery across HCM, Payroll, Benefits, Compensation, Security, Reporting, and Integrations. Founded 2014.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111312;
+  --ink-2:#555956;
+  --ink-3:#8A8E8A;
+  --paper:#ffffff;
+  --field:#F1F1EC;
+  --rule:#DEDED7;
+  --signal:#1B34C8;
+  --display:'Archivo',system-ui,sans-serif;
+  --body:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --gut:clamp(1.25rem,5vw,4.5rem);
+  --max:1280px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+
+header{border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--paper);z-index:20}
+.bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:2px solid var(--ink);padding:7px 12px 6px;line-height:1}
+nav ul{display:flex;gap:2rem;list-style:none}
+nav a{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink-2);padding-bottom:2px;border-bottom:1px solid transparent}
+nav a:hover{color:var(--ink);border-color:var(--signal)}
+@media(max-width:760px){nav{display:none}}
+
+.hero{padding:clamp(4.5rem,11vw,9rem) 0 clamp(3.5rem,7vw,6rem)}
+.hero h1{font-family:var(--display);font-weight:600;font-size:clamp(2.4rem,6.6vw,5.2rem);line-height:1.02;letter-spacing:-.035em;max-width:16ch;margin:1.6rem 0 0}
+.lede{font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.55;color:var(--ink-2);max-width:54ch;margin-top:1.7rem}
+.strip{display:flex;flex-wrap:wrap;gap:0;margin-top:clamp(3rem,6vw,5rem);border-top:1px solid var(--rule)}
+.strip div{flex:1 1 190px;padding:1.15rem 1.5rem 1.15rem 0}
+.strip .k{display:block;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.4rem}
+.strip .v{font-size:15.5px;color:var(--ink)}
+
+.band{background:var(--ink);color:var(--paper);padding:clamp(4rem,8vw,7rem) 0}
+.band p.stmt{font-family:var(--display);font-weight:500;font-size:clamp(1.55rem,3.4vw,2.9rem);line-height:1.2;letter-spacing:-.02em;max-width:22ch}
+.band .eyebrow{color:#7E837F;margin-bottom:1.6rem}
+.band .note{font-family:var(--body);font-size:1.02rem;line-height:1.6;color:#A9ADA9;max-width:46ch;margin-top:2rem}
+
+.section{padding:clamp(4rem,8vw,7rem) 0}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:2rem;flex-wrap:wrap;border-bottom:1px solid var(--ink);padding-bottom:1.1rem;margin-bottom:3rem}
+.section-head h2{font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,2.6vw,2.1rem);letter-spacing:-.025em;line-height:1.1}
+
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+@media(max-width:960px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+.cap{padding:1.9rem 1.9rem 2.2rem;border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+.cap:nth-child(3n+1){border-left:0}
+@media(max-width:960px){.cap:nth-child(3n+1){border-left:1px solid var(--rule)}.cap:nth-child(2n+1){border-left:0}}
+@media(max-width:640px){.cap{border-left:0!important;padding-left:0;padding-right:0}}
+.cap h3{font-family:var(--display);font-weight:600;font-size:1.15rem;letter-spacing:-.01em;margin:.9rem 0 .7rem}
+.cap p{font-size:15.5px;line-height:1.6;color:var(--ink-2)}
+
+.firm{background:var(--field)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(2rem,5vw,4.5rem)}
+@media(max-width:820px){.facts{grid-template-columns:1fr}}
+.facts p{color:var(--ink-2);margin-bottom:1.25rem;max-width:52ch}
+.facts p:last-child{margin-bottom:0}
+.record{list-style:none;border-top:1px solid var(--rule)}
+.record li{display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;padding:.95rem 0;border-bottom:1px solid var(--rule)}
+.record .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+.record .v{font-size:15.5px;text-align:right}
+
+.sectors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
+@media(max-width:820px){.sectors{grid-template-columns:1fr}}
+.sec{padding:2rem 2rem 2.3rem;border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+.sec:nth-child(2n+1){border-left:0}
+@media(max-width:820px){.sec{border-left:0;padding-left:0;padding-right:0}}
+.sec h3{font-family:var(--display);font-weight:600;font-size:clamp(1.2rem,2vw,1.45rem);letter-spacing:-.02em;margin:.85rem 0 .7rem}
+.sec p{font-size:15.5px;line-height:1.6;color:var(--ink-2);max-width:46ch}
+
+.colophon{padding:clamp(3.5rem,7vw,6rem) 0 0}
+.colophon-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+@media(max-width:760px){.colophon-grid{grid-template-columns:1fr}}
+.colophon h2{font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,2.6vw,2.1rem);letter-spacing:-.025em}
+.colophon p{color:var(--ink-2);margin-top:1.2rem;max-width:42ch}
+.colophon a{color:var(--signal);text-decoration:none;border-bottom:1px solid rgba(27,52,200,.3)}
+.colophon a:hover{border-color:var(--signal)}
+
+footer{border-top:1px solid var(--rule);margin-top:clamp(3.5rem,7vw,6rem);padding:2.2rem 0 3rem}
+.foot{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="/">Van Field Group</a>
+    <nav>
+      <ul>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#firm">The firm</a></li>
+        <li><a href="#sectors">Sectors</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Workday consulting &nbsp;/&nbsp; Chicago &nbsp;/&nbsp; Since 2014</p>
+      <h1>One team from requirements to production.</h1>
+      <p class="lede">Van Field Group is a boutique Workday consultancy. Functional design and technical build come off the same bench, not from two vendors who have never spoken to each other.</p>
+
+      <div class="strip">
+        <div><span class="k">Founded</span><span class="v">2014, Chicago</span></div>
+        <div><span class="k">Scope</span><span class="v">Full platform, functional and technical</span></div>
+        <div><span class="k">Engagements</span><span class="v">Long-term, often full implementation cycles</span></div>
+        <div><span class="k">Delivery</span><span class="v">Remote, nationwide</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="capabilities">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What we deliver</h2>
+        <span class="eyebrow">Functional and technical</span>
+      </div>
+      <div class="grid">
+        <div class="cap">
+          <span class="eyebrow">HCM</span>
+          <h3>Functional delivery</h3>
+          <p>Requirements, business process design, and configuration across the full HCM suite, from design through go-live and post-production support.</p>
+        </div>
+        <div class="cap">
+          <span class="eyebrow">Benefits</span>
+          <h3>US and international</h3>
+          <p>Plan design, eligibility, and open enrollment through to carrier connectivity, including the integrations that carry the enrollment file when it matters.</p>
+        </div>
+        <div class="cap">
+          <span class="eyebrow">Payroll and comp</span>
+          <h3>Configuration</h3>
+          <p>Payroll and Advanced Compensation configuration, built to hold up through a merit cycle and an audit in the same year.</p>
+        </div>
+        <div class="cap">
+          <span class="eyebrow">Security</span>
+          <h3>Design and remediation</h3>
+          <p>Role-based and domain security, integration system user and security group architecture, and segregation of duties, including remediation of tenants that drifted years ago.</p>
+        </div>
+        <div class="cap">
+          <span class="eyebrow">Reporting</span>
+          <h3>Analytics</h3>
+          <p>Custom reports, BIRT, calculated fields, and Prism Analytics, built so your team can maintain them after we leave.</p>
+        </div>
+        <div class="cap">
+          <span class="eyebrow">Integration</span>
+          <h3>Data architecture</h3>
+          <p>Studio, Orchestrate, EIB, Core Connectors, RaaS, and event-driven REST patterns feeding Snowflake, Databricks, and Palantir Foundry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">Independence</p>
+      <p class="stmt">We have no methodology to sell.</p>
+      <p class="note">The recommendation you get is the one we actually think is right, including when the answer is that you do not need us for it.</p>
+    </div>
+  </section>
+
+  <section class="section firm" id="firm">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The firm</h2>
+        <span class="eyebrow">Founded 2014</span>
+      </div>
+      <div class="facts">
+        <div>
+          <p>Van Field Group is small on purpose. Engagements are staffed from a standing bench of specialists rather than assembled from whoever is available, and the people who scope the work are the people who do it.</p>
+          <p>Most engagements run long. Many span a full implementation cycle and continue into post-production support, which means the team that made the design decisions is still there when those decisions get tested.</p>
+        </div>
+        <div>
+          <ul class="record">
+            <li><span class="k">Founded</span><span class="v">2014</span></li>
+            <li><span class="k">Structure</span><span class="v">Privately held, independently owned</span></li>
+            <li><span class="k">Principal</span><span class="v">Lewis Reis, President and Principal ERP Architect</span></li>
+            <li><span class="k">Bench</span><span class="v">Workday specialists across functional and technical</span></li>
+            <li><span class="k">Based</span><span class="v">Chicago, Illinois</span></li>
+            <li><span class="k">Delivery</span><span class="v">Remote, nationwide</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sectors">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Where we work</h2>
+        <span class="eyebrow">What the work looks like</span>
+      </div>
+      <div class="sectors">
+
+        <div class="sec">
+          <span class="eyebrow">01</span>
+          <h3>Defense and government contracting</h3>
+          <p>Job architecture that maps to contracts and clearance structures, security models built to be explained to an auditor, and reporting that holds up under scrutiny from outside the organization.</p>
+        </div>
+
+        <div class="sec">
+          <span class="eyebrow">02</span>
+          <h3>Financial services</h3>
+          <p>Advanced Compensation carrying bonus, equity, and multi-currency plans through a merit cycle, alongside the segregation of duties and access review work that comes with a regulated environment.</p>
+        </div>
+
+        <div class="sec">
+          <span class="eyebrow">03</span>
+          <h3>Hospital and provider systems</h3>
+          <p>Workforces that never stop. Scheduling, absence, premium pay, and union rules across large clinical populations, with integrations to credentialing, scheduling, and clinical systems that predate Workday.</p>
+        </div>
+
+        <div class="sec">
+          <span class="eyebrow">04</span>
+          <h3>Health technology</h3>
+          <p>Organizations whose headcount changes shape faster than their configuration does. Recruiting through to hire, supervisory structures that survive reorganization, and data flowing out to the analytics platform the business already runs on.</p>
+        </div>
+
+        <div class="sec">
+          <span class="eyebrow">05</span>
+          <h3>Retail and consumer health</h3>
+          <p>High-volume hourly workforces at scale. Time tracking, absence, and benefits eligibility across thousands of variable-hour employees, plus the carrier connectivity that has to be right before open enrollment opens.</p>
+        </div>
+
+        <div class="sec">
+          <span class="eyebrow">06</span>
+          <h3>Enterprise data and analytics</h3>
+          <p>Work that starts in Workday and does not end there. Real-time and event-driven patterns feeding Snowflake, Databricks, and Palantir Foundry, and Workday data exposed to AI agents through Model Context Protocol servers.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="colophon">
+    <div class="wrap colophon-grid">
+      <div>
+        <h2>Contact</h2>
+        <p>Existing clients should reach their engagement lead directly. Everything else goes to <a href="mailto:lewis@vanfieldgroup.com">lewis@vanfieldgroup.com</a>.</p>
+      </div>
+      <div>
+        <h2>Elsewhere</h2>
+        <p><a href="#">Van Field Group on LinkedIn</a><br><a href="#">Lewis Reis on LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>Van Field Group, Inc.</span>
+    <span>Founded 2014 &nbsp;/&nbsp; Chicago</span>
+    <span>Workday consulting</span>
+  </div>
+</footer>
+
+</body>
+</html>
